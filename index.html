@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the number</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="levels">
+            <p>Select any level</p>
+            <input type="button" id="5" class="level" value="Easy">
+            <input type="button" id="10" class="level" value="Medium">
+            <input type="button" id="20" class="level" value="Hard">
+        </div>
+        <div class="form">
+            <form action="#">
+                <label for="guessfield">Guess a number</label>
+                <input type="text" id="guessfield" class="guessfield">
+                <input type="submit" id="subt" value="Submit guess">   
+            </form>
+            <div class="guessing">
+                <p><span id="prev_guess"></span></p>
+                <p><span id="no_guess"></span></p>
+            </div>
+        </div>
+    </div>
+<script src="./index.js"></script>
+</body>
+</html>
